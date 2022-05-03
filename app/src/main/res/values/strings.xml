@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Shared Preferences</string>
     <string name="button">Button</string>
+    <string name="edittext">editText</string>
 </resources>
