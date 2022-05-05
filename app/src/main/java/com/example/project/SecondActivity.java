@@ -3,6 +3,7 @@ package com.example.project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
     private EditText nameEdit;
-    private Button button;
+    private Button saveBtn, returnBtn;
     private SharedPreferences sh;
     private String nameStr;
 
@@ -23,18 +24,27 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         nameEdit = findViewById(R.id.nameEdit);
-        button = findViewById(R.id.button);
+        saveBtn = findViewById(R.id.saveBtn);
+        returnBtn = findViewById(R.id.returnBtn);
+
         sh =  getSharedPreferences("UsersPrefs", Context.MODE_PRIVATE);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 nameStr = nameEdit.getText().toString();
                 SharedPreferences.Editor editor = sh.edit();
 
                 editor.putString("name", nameStr);
-                editor.commit();
+                editor.apply();
                 Toast.makeText(SecondActivity.this, "Information Saved", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SecondActivity.this, MainActivity.class));
             }
         });
 
