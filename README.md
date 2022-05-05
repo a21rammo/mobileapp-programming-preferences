@@ -30,7 +30,7 @@ The sharedpreference will be saved into the **UsersPrefs**
                 }
             });
     ```
-Return button will redirect user to the mainpage
+            Return button will redirect user to the mainpage
 ```
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +39,7 @@ Return button will redirect user to the mainpage
             }
         });
 ```
- MainActivity consist of a  button  to direct secondactivity also  getting the context from secondactivity through sharedpreference
+    MainActivity consist of a  button  to direct secondactivity also  getting the context from secondactivity through sharedpreference
    ```
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
@@ -57,5 +57,5 @@ Return button will redirect user to the mainpage
    ```
 
 
-![](firstpage.png)
-![](secondpage.png)
+                ![](firstpage.png)
+                ![](secondpage.png)
