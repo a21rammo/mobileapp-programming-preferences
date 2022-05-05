@@ -17,10 +17,10 @@ The secondactivity consist of:
 
 The save button will save  our data and also notify the user with the Toast message that the information has been saved.
 The sharedpreference will be saved into the **UsersPrefs**
-    ```
-            saveBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+```
+       saveBtn.setOnClickListener(new View.OnClickListener() {
+       @Override
+       public void onClick(View view) {
                     nameStr = nameEdit.getText().toString();
                     SharedPreferences.Editor editor = sh.edit();
 
