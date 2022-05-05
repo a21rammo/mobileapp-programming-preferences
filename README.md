@@ -39,8 +39,12 @@ The sharedpreference will be saved into the **UsersPrefs**
             }
         });
 ```
-    MainActivity consist of a  button  to direct secondactivity also  getting the context from secondactivity through sharedpreference
+
+MainActivity consist of a  button  to direct secondactivity also  getting the context from secondactivity through sharedpreference
+
+
  ```
+
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
