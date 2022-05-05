@@ -6,13 +6,14 @@ The  projected started with creating Another Activity with uml. The plan was the
 This will require  a "saving" button, "return  button", "Edit text panel" and  "Textview".
 
 The secondactivity consist of:
-    ```
-        nameEdit = findViewById(R.id.nameEdit);
-        saveBtn = findViewById(R.id.saveBtn);
-        returnBtn = findViewById(R.id.returnBtn);
 
-        sh =  getSharedPreferences("UsersPrefs", Context.MODE_PRIVATE);
-    ```
+```
+   nameEdit = findViewById(R.id.nameEdit);
+   saveBtn = findViewById(R.id.saveBtn);
+   returnBtn = findViewById(R.id.returnBtn);
+
+    sh =  getSharedPreferences("UsersPrefs", Context.MODE_PRIVATE);
+```
 
 The save button will save  our data and also notify the user with the Toast message that the information has been saved.
 The sharedpreference will be saved into the **UsersPrefs**
