@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button;
     private SharedPreferences myPreferenceRef;
     private SharedPreferences.Editor myPreferenceEditor;
+    private TextView  name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        myPreferenceRef = getSharedPreferences("MyPreferenceName", MODE_PRIVATE);
-        myPreferenceEditor = myPreferenceRef.edit();
-    }
+        name = findViewById(R.id.showName);
 
+    }
 }
