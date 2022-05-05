@@ -17,7 +17,7 @@ The secondactivity consist of:
 
 The save button will save  our data and also notify the user with the Toast message that the information has been saved.
 The sharedpreference will be saved into the **UsersPrefs**
-```
+    ```
        saveBtn.setOnClickListener(new View.OnClickListener() {
        @Override
        public void onClick(View view) {
@@ -29,8 +29,8 @@ The sharedpreference will be saved into the **UsersPrefs**
                     Toast.makeText(SecondActivity.this, "Information Saved", Toast.LENGTH_LONG).show();
                 }
             });
-```
-            Return button will redirect user to the mainpage
+    ```
+ Return button will redirect user to the mainpage
 ```
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +39,7 @@ The sharedpreference will be saved into the **UsersPrefs**
             }
         });
 ```
-MainActivity consist of a  button  to direct secondactivity also  getting the context from secondactivity through sharedpreference
+    MainActivity consist of a  button  to direct secondactivity also  getting the context from secondactivity through sharedpreference
  ```
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
