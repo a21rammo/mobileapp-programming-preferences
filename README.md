@@ -31,17 +31,17 @@ The sharedpreference will be saved into the **UsersPrefs**
             });
     ```
 Return button will redirect user to the mainpage
-    ```
+```
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(SecondActivity.this, MainActivity.class));
             }
-            });
-    ```
+        });
+```
  MainActivity consist of a  button  to direct secondactivity also  getting the context from secondactivity through sharedpreference
-    ```
-       button = findViewById(R.id.button);
+   ```
+        button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +54,7 @@ Return button will redirect user to the mainpage
         nameStr = sh.getString("name", "");
 
         name.setText(nameStr);
-    ```
+   ```
 
 
 ![](firstpage.png)
