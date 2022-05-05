@@ -29,7 +29,7 @@ The sharedpreference will be saved into the **UsersPrefs**
                     Toast.makeText(SecondActivity.this, "Information Saved", Toast.LENGTH_LONG).show();
                 }
             });
-    ```
+```
             Return button will redirect user to the mainpage
 ```
         returnBtn.setOnClickListener(new View.OnClickListener() {
@@ -57,5 +57,6 @@ The sharedpreference will be saved into the **UsersPrefs**
    ```
 
 
-                ![](firstpage.png)
-                ![](secondpage.png)
+
+![](firstpage.png)
+![](secondpage.png)
